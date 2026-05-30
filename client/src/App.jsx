@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Hem from "./pages/Hem";
@@ -9,6 +10,14 @@ import Betalningklar from "./pages/Betalningklar";
 function App() {
   return (
     <BrowserRouter>
+
+      <nav>
+        <Link to="/">Hem</Link>
+        <Link to="/products">Produkter</Link>
+        <Link to="/cart">Kundvagn</Link>
+        <Link to="/checkout">Betalning</Link>
+      </nav>
+      
       <Routes>
         <Route path="/" element={<Hem />} />
         <Route path="/products" element={<Produkter />} />

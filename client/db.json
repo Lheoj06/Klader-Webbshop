@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vit T-shirt",
+      "price": 199,
+      "category": "Tröjor"
+    },
+    {
+      "id": 2,
+      "name": "Svart Hoodie",
+      "price": 499,
+      "category": "Tröjor"
+    },
+    {
+      "id": 3,
+      "name": "Blå Jeans",
+      "price": 599,
+      "category": "Byxor"
+    },
+    {
+      "id": 4,
+      "name": "Cargo Byxor",
+      "price": 699,
+      "category": "Byxor"
+    },
+    {
+      "id": 5,
+      "name": "Vita Sneakers",
+      "price": 899,
+      "category": "Skor"
+    },
+    {
+      "id": 6,
+      "name": "Keps",
+      "price": 149,
+      "category": "Accessoarer"
+    }
+  ]
+}
