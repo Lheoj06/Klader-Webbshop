@@ -74,6 +74,11 @@ function Produkter() {
           <h3>{product.name}</h3>
           <p>{product.price} kr</p>
           <p>{product.category}</p>
+          <img
+  src={product.image}
+  alt={product.name}
+  className="product-image"
+/>
 
           <button onClick={() => addToCart(product)}>
             Lägg i varukorg

@@ -42,6 +42,13 @@ function Kundvagn() {
 
       {cart.map((item) => (
         <div key={item.id}>
+
+         <img
+         src={item.image}
+         alt={item.name}
+         className="cart-image"
+         />
+
           <h3>{item.name}</h3>
 
           <p>

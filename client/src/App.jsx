@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <nav>
+      <nav className="navbar">
         <Link to="/">Hem</Link>
         <Link to="/products">Produkter</Link>
         <Link to="/cart">Kundvagn</Link>
