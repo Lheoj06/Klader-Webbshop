@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 function Produkter() {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Alla");
+  const { cart, setCart } = useContext(CartContext);
 
   useEffect(() => {
     fetch("http://localhost:3000/products")
@@ -16,6 +19,27 @@ function Produkter() {
       : products.filter(
           (product) => product.category === selectedCategory
         );
+
+        const addToCart = (product) => {
+  const existingProduct = cart.find(
+    (item) => item.id === product.id
+  );
+
+  if (existingProduct) {
+    setCart(
+      cart.map((item) =>
+        item.id === product.id
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
+      )
+    );
+  } else {
+    setCart([
+      ...cart,
+      { ...product, quantity: 1 }
+    ]);
+  }
+};
 
   return (
     <div>
@@ -41,16 +65,24 @@ function Produkter() {
         Accessoarer
       </button>
 
+      
+
+          <div className="products-container">
+
       {filteredProducts.map((product) => (
-        <div key={product.id}>
+        <div className="product-card" key={product.id}>
           <h3>{product.name}</h3>
           <p>{product.price} kr</p>
           <p>{product.category}</p>
+
+          <button onClick={() => addToCart(product)}>
+            Lägg i varukorg
+          </button>
         </div>
       ))}
 
-      <button>Lägg i varukorg</button>
     </div>
+  </div>
   );
 }
 

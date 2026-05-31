@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 import Hem from "./pages/Hem";
 import Produkter from "./pages/Produkter";
