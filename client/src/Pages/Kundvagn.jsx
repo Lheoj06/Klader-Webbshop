@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 function Kundvagn() {
   const { cart, setCart } = useContext(CartContext);
@@ -41,7 +42,7 @@ function Kundvagn() {
       <h1>Kundvagn</h1>
 
       {cart.map((item) => (
-        <div key={item.id}>
+        <div className="cart-item" key={item.id}>
 
          <img
          src={item.image}
@@ -69,7 +70,10 @@ function Kundvagn() {
         </div>
       ))}
 
-      <h2>Totalpris: {totalPrice} kr</h2>
+     <h2>Totalpris: {totalPrice} kr</h2>
+     <Link to="/checkout">
+     <button>Checkout</button>
+     </Link>
     </div>
   );
 }
