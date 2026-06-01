@@ -1,19 +1,42 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 function Betalning() {
   const navigate = useNavigate();
+  const { cart } = useContext(CartContext);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("Kort");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    navigate("/confirmation");
+  const order = {
+    customerName: name,
+    email: email,
+    phone: phone,
+    paymentMethod: paymentMethod,
+    products: cart,
+    totalPrice: cart.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0
+    )
   };
+
+  await fetch("http://localhost:3000/orders", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(order)
+  });
+
+  navigate("/confirmation");
+};
 
   return (
     <div>

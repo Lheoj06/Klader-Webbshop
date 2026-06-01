@@ -1,92 +1,234 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Vit T-shirt",
       "price": 199,
       "category": "Tröjor",
       "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Svart Hoodie",
       "price": 499,
       "category": "Tröjor",
       "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Grå Sweatshirt",
       "price": 399,
       "category": "Tröjor",
       "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Blå Jeans",
       "price": 599,
       "category": "Byxor",
       "image": "https://images.unsplash.com/photo-1542272604-787c3835535d"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Svarta Cargo Byxor",
       "price": 699,
       "category": "Byxor",
       "image": "https://lotuseco.se/wp-content/uploads/2024/09/ekologiska-cargobyxor-manchester-bagarmossen-svart-modell-768x1152.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Beige Chinos",
       "price": 549,
       "category": "Byxor",
       "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Vita Sneakers",
       "price": 899,
       "category": "Skor",
       "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Svarta Sneakers",
       "price": 999,
       "category": "Skor",
       "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Löparskor",
       "price": 1199,
       "category": "Skor",
       "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Svart Keps",
       "price": 149,
       "category": "Accessoarer",
       "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Läderbälte",
       "price": 249,
       "category": "Accessoarer",
       "image": "https://images.unsplash.com/photo-1624222247344-550fb60583dc"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Solglasögon",
       "price": 299,
       "category": "Accessoarer",
       "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083"
     }
   ],
-
-  "orders": [],
-
-  "users": []
+  "orders": [
+    {
+      "customerName": "lheo johansson",
+      "email": "blablabla@gmail.com",
+      "phone": "0766581243",
+      "paymentMethod": "Swish",
+      "products": [
+        {
+          "id": "2",
+          "name": "Svart Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Beige Chinos",
+          "price": 549,
+          "category": "Byxor",
+          "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Svarta Cargo Byxor",
+          "price": 699,
+          "category": "Byxor",
+          "image": "https://lotuseco.se/wp-content/uploads/2024/09/ekologiska-cargobyxor-manchester-bagarmossen-svart-modell-768x1152.jpg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 1747,
+      "id": "gaLIeDBfLQk"
+    },
+    {
+      "customerName": "dwdawdawda",
+      "email": "dwadwada@gmail.com",
+      "phone": "dwadawdwad",
+      "paymentMethod": "Swish",
+      "products": [
+        {
+          "id": "2",
+          "name": "Svart Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Vit T-shirt",
+          "price": 199,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Grå Sweatshirt",
+          "price": 399,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Beige Chinos",
+          "price": 549,
+          "category": "Byxor",
+          "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Svarta Cargo Byxor",
+          "price": 699,
+          "category": "Byxor",
+          "image": "https://lotuseco.se/wp-content/uploads/2024/09/ekologiska-cargobyxor-manchester-bagarmossen-svart-modell-768x1152.jpg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 2345,
+      "id": "usLG0Tx1UHI"
+    },
+    {
+      "customerName": "dwad",
+      "email": "lheobebe@gmail.com",
+      "phone": "dawdwadaw",
+      "paymentMethod": "Kort",
+      "products": [
+        {
+          "id": "2",
+          "name": "Svart Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Grå Sweatshirt",
+          "price": 399,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Vit T-shirt",
+          "price": 199,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Blå Jeans",
+          "price": 599,
+          "category": "Byxor",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Svarta Cargo Byxor",
+          "price": 699,
+          "category": "Byxor",
+          "image": "https://lotuseco.se/wp-content/uploads/2024/09/ekologiska-cargobyxor-manchester-bagarmossen-svart-modell-768x1152.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Beige Chinos",
+          "price": 549,
+          "category": "Byxor",
+          "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 2944,
+      "id": "V29AKC8o3AM"
+    }
+  ],
+  "users": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
