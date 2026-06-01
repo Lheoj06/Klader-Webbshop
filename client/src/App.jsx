@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
+import logo from "./assets/logga.png";
 
 import Hem from "./pages/Hem";
 import Produkter from "./pages/Produkter";
@@ -17,6 +18,18 @@ function App() {
     <BrowserRouter>
 
       <nav className="navbar">
+
+          <div className="logo-container">
+
+    <img
+      src={logo}
+      alt="Kläder och Sånt"
+      className="logo"
+    />
+
+    <h2>Kläder & Sånt</h2>
+
+  </div>
 
   <div className="nav-links">
     <Link to="/">Hem</Link>
