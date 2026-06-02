@@ -45,25 +45,42 @@ function Produkter() {
     <div>
       <h1>Produkter</h1>
 
-      <button onClick={() => setSelectedCategory("Alla")}>
-        Alla
-      </button>
+      <h2>Vald kategori: {selectedCategory}</h2>
 
-      <button onClick={() => setSelectedCategory("Tröjor")}>
-        Tröjor
-      </button>
+      <div className="filter-buttons">
+    <button
+  className={selectedCategory === "Alla" ? "active-filter" : ""}
+  onClick={() => setSelectedCategory("Alla")}
+>
+  Alla
+</button>
 
-      <button onClick={() => setSelectedCategory("Byxor")}>
-        Byxor
-      </button>
 
-      <button onClick={() => setSelectedCategory("Skor")}>
-        Skor
-      </button>
-
-      <button onClick={() => setSelectedCategory("Accessoarer")}>
-        Accessoarer
-      </button>
+  <button
+  className={selectedCategory === "Tröjor" ? "active-filter" : ""}
+  onClick={() => setSelectedCategory("Tröjor")}
+>
+  Tröjor
+</button>
+  <button
+  className={selectedCategory === "Byxor" ? "active-filter" : ""}
+  onClick={() => setSelectedCategory("Byxor")}
+>
+  Byxor
+</button>
+  <button
+  className={selectedCategory === "Skor" ? "active-filter" : ""}
+  onClick={() => setSelectedCategory("Skor")}
+>
+  Skor
+</button>
+  <button
+  className={selectedCategory === "Accessoarer" ? "active-filter" : ""}
+  onClick={() => setSelectedCategory("Accessoarer")}
+>
+  Accessoarer
+</button>
+</div>
 
       
 
@@ -72,7 +89,7 @@ function Produkter() {
       {filteredProducts.map((product) => (
         <div className="product-card" key={product.id}>
           <h3>{product.name}</h3>
-          <p>{product.price} kr</p>
+          <p className="product-price">{product.price} kr</p>
           <p>{product.category}</p>
           <img
   src={product.image}
@@ -81,7 +98,7 @@ function Produkter() {
 />
 
           <button onClick={() => addToCart(product)}>
-            Lägg i varukorg
+            🛒 Lägg i varukorg
           </button>
         </div>
       ))}

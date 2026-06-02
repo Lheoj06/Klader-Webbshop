@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
-import logo from "./assets/logga.png";
+import logo from "./assets/logga.svg";
 
 import Hem from "./pages/Hem";
 import Produkter from "./pages/Produkter";
