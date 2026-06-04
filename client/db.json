@@ -9,21 +9,21 @@
     },
     {
       "id": "2",
-      "name": "Svart Hoodie",
+      "name": "Grå Hoodie",
       "price": 499,
       "category": "Tröjor",
       "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7"
     },
     {
       "id": "3",
-      "name": "Grå Sweatshirt",
+      "name": "Beige Tröja",
       "price": 399,
       "category": "Tröjor",
       "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27"
     },
     {
       "id": "4",
-      "name": "Blå Jeans",
+      "name": "Jeans",
       "price": 599,
       "category": "Byxor",
       "image": "https://images.unsplash.com/photo-1542272604-787c3835535d"
@@ -44,7 +44,7 @@
     },
     {
       "id": "7",
-      "name": "Vita Sneakers",
+      "name": "Röda Sneakers",
       "price": 899,
       "category": "Skor",
       "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
@@ -65,7 +65,7 @@
     },
     {
       "id": "10",
-      "name": "Svart Keps",
+      "name": "Vit Keps",
       "price": 149,
       "category": "Accessoarer",
       "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b"
@@ -347,6 +347,48 @@
       ],
       "totalPrice": 898,
       "id": "Yr2UyurVlE8"
+    },
+    {
+      "customerName": "dwadawdaw",
+      "email": "dwadad@gmail.com",
+      "phone": "0766314582",
+      "paymentMethod": "Swish",
+      "products": [
+        {
+          "id": "2",
+          "name": "Grå Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 8
+        },
+        {
+          "id": "3",
+          "name": "Beige Tröja",
+          "price": 399,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Vit T-shirt",
+          "price": 199,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Svarta Cargo Byxor",
+          "price": 699,
+          "category": "Byxor",
+          "image": "https://lotuseco.se/wp-content/uploads/2024/09/ekologiska-cargobyxor-manchester-bagarmossen-svart-modell-768x1152.jpg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 5289,
+      "id": "64W7KW2pqIw"
     }
   ],
   "users": [],
