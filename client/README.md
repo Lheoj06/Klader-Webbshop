@@ -1,16 +1,105 @@
-# React + Vite
+# Kläder & Sånt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Beskrivning
 
-Currently, two official plugins are available:
+Kläder & Sånt är en webbshopsapplikation byggd med react. Användaren kan på ett simpelt sätt bläddra bland produkter och filtrera produkterna efter kategori. Användaren kan sedan lägga till produkter i kundvagnen, genomföra sitt köp och ange personuppgifter för att sedan få en orderbekräftelse
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Funktioner
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Homepage med hero-banner
+- Produktsida med kategorifilter och produktbilder
+- Kundvagn
+- Ändra antal produkter i kundvagnen
+- Ta bort produkter från kundvagnen
+- Betalningssida
+- Orderbekräftelse
+- Responsiv design för mobil och dator
+- API via json-server
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+### Klona projektet från github
+
+```bash
+git clone (jag skriver min github länk här sen)
+```
+
+### 2. Installera beroenden
+
+```bash
+npm install
+```
+
+---
+
+## Starta frontend
+
+Kör:
+
+```bash
+npm run dev
+```
+
+Öppna sedan:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Starta backend
+
+Projektet använder json-server.
+
+Kör:
+
+```bash
+npx json-server db.json
+```
+
+API:t startar på:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## API Endpoints
+
+### Hämta produkter
+
+```http
+GET /products
+```
+
+Exempel:
+
+```text
+http://localhost:3000/products
+```
+
+### Skapa order
+
+```http
+POST /orders
+```
+
+Orderdata sparas i:
+
+```text
+db.json
+```
+
+---
+
+
+
+
+
+
