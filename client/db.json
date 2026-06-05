@@ -389,6 +389,58 @@
       ],
       "totalPrice": 5289,
       "id": "64W7KW2pqIw"
+    },
+    {
+      "customerName": "dwadad",
+      "email": "wdadw@gmail.com",
+      "phone": "5123123",
+      "paymentMethod": "Swish",
+      "products": [
+        {
+          "id": "2",
+          "name": "Grå Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Vit T-shirt",
+          "price": 199,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 698,
+      "id": "rW7pT7jhnrQ"
+    },
+    {
+      "customerName": "dwdawd",
+      "email": "kkdwa@gmail.com",
+      "phone": "09893123",
+      "paymentMethod": "Swish",
+      "products": [
+        {
+          "id": "3",
+          "name": "Beige Tröja",
+          "price": 399,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Grå Hoodie",
+          "price": 499,
+          "category": "Tröjor",
+          "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 898,
+      "id": "VQUxGyx8SzA"
     }
   ],
   "users": [],

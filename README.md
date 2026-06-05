@@ -25,7 +25,7 @@ Kläder & Sånt är en webbshopsapplikation byggd med react. Användaren kan på
 ### Klona projektet från github
 
 ```bash
-git clone (jag skriver min github länk här sen)
+git clone https://github.com/Lheoj06/Klader-Webbshop
 ```
 
 ### 2. Installera beroenden
